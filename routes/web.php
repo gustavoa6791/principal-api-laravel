@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::phase('/', 'BlogController@HomePage');
+/* Route::phase('/', 'BlogController@HomePage');
 Route::phase('/about', 'BlogController@AboutPage');
 Route::phase('/contact', 'BlogController@ContactPage');
-Route::phase('/posts/{article}', 'BlogController@SingleArticle');
+Route::phase('/posts/{article}', 'BlogController@SingleArticle'); */
+
+Route::get('/', function ($id) {
+    return "hola";
+});
